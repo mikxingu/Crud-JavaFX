@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
       <Button fx:id="quitButton" layoutX="336.0" layoutY="262.0" mnemonicParsing="false" onAction="#onQuitAction" text="QUIT" />
-      <Label layoutX="14.0" layoutY="14.0" text="Calculate Sum" />
-      <TextField fx:id="txtFirstNumber" layoutX="29.0" layoutY="74.0" promptText="First Number" />
-      <TextField fx:id="txtSecondNumber" layoutX="29.0" layoutY="113.0" promptText="Second Number" />
-      <Button fx:id="sumButton" layoutX="31.0" layoutY="160.0" mnemonicParsing="false" onAction="#onSumButtomAction" text="Calculate" />
-      <Label layoutX="29.0" layoutY="215.0" text="Result = " />
-      <Label fx:id="resultLabel" layoutX="97.0" layoutY="215.0" />
+      <ComboBox fx:id="personComboBox" layoutX="39.0" layoutY="49.0" onAction="#onPersonComboBoxAction" prefHeight="24.0" prefWidth="161.0" promptText="Select a person..." />
+      <Button fx:id="allPersonButton" layoutX="250.0" layoutY="49.0" mnemonicParsing="false" onAction="#onAllPersonButtonAction" text="Show all" />
    </children>
 </AnchorPane>
